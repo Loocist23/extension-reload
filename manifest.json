@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Reloader automatique",
+  "version": "1.0",
+  "description": "Recharge les onglets à intervalles réguliers",
+  "permissions": ["alarms", "tabs", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.ico",
+      "48": "icon48.ico",
+      "128": "icon128.ico"
+    }
+  },
+  "icons": {
+    "16": "icon16.ico",
+    "48": "icon48.ico",
+    "128": "icon128.ico"
+  }
+}

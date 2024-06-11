@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+  body {
+    width: 300px;
+    padding: 10px;
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+  }
+  select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  li span {
+    margin-right: 5px;
+  }
+
+</style>
+<body>
+  <div>
+    <label for="tabs">Choisir un onglet :</label>
+    <select id="tabs"></select>
+    <label for="interval">Intervalle de rechargement (en secondes) :</label>
+    <input type="number" id="interval" min="1" value="10">
+    <hr/>
+    <button id="setReload">Définir le rechargement</button>
+    <button id="stopReload">Arrêter le rechargement</button>
+    <h3>Onglets en rechargement :</h3>
+    <ul id="activeReloadingTabs"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
